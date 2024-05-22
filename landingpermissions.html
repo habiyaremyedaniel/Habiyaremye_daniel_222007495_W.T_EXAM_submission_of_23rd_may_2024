@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <button class="back-button"onclick="window.location.href='dashboardadmin.html'">BACK</button>
+    <!--Habiyaremye daniel 2220007495--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>permissions Panel</title>
+</head>
+<body>
+    <h1>permissions Panel</h1>
+    
+    <!-- permissions Registration Form -->
+    <h2>Create permissions</h2>
+    <form method="post" action="landingpermissions.php">
+        <label for="userid">userid:</label><br>
+        <input type="number" name="userid" required><br>
+        <label for="deviceid">deviceid:</label><br>
+        <input type="number" name="deviceid" required><br>
+        <label for="permissiontype">permissiontype:</label><br>
+        <input type="text" name="permissiontype" required><br>
+        
+       
+        <button type="submit" name="create">Create</button>
+    </form>
+             <h2>User permissions
+         </h2>
+     <form method="post" action="landingpermissions.php">
+                    <input type="number" name="permissionid" placeholder=" New permissionid">
+                    <input type="text" name="newuserid" placeholder="New userid">
+                    <input type="text" name="newdeviceid" placeholder="New deviceid">
+                    <input type="text" name="newpermissiontype" placeholder="New permissiontype">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">read</button>
+                  
+                                </form>
+</body>
+</html>

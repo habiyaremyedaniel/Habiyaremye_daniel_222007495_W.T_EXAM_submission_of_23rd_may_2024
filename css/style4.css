@@ -1,0 +1,60 @@
+body {
+  background-image: url('image/T.jpg');
+  background-size: auto 90%; /* Adjust the size of the background image */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay color with 50% opacity */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1; /* Ensure overlay is above the background */
+}
+
+.container {
+  position: relative;
+  z-index: 2; /* Ensure container is above the overlay */
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #FFFFFF; /* White text color */
+  background-color: #4CAF50; /* Green */
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.btn-register {
+  background-color: #FFC107; /* Yellow */
+  margin-left: 20px;
+}
+
+.btn-register:hover {
+  background-color: #FFA000; /* Darker yellow on hover */
+}

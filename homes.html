@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Automation control System</title>
+    <link rel="stylesheet" href="css/style6.css">
+    <link rel="stylesheet" href="css/style1.css">
+        <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    /* Normal link */
+    a {
+      padding: 10px;
+      color: white;
+      background-color: pink;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    /* Visited link */
+    a:visited {
+      color: purple;
+    }
+    /* Unvisited link */
+    a:link {
+      color: brown; /* Changed to lowercase */
+    }
+    /* Hover effect */
+    a:hover {
+      background-color: white;
+    }
+
+    /* Active link */
+    a:active {
+      background-color: red;
+    }
+
+    /* Extend margin left for search button */
+    button.btn {
+      margin-left: 15px; /* Adjust this value as needed */
+      margin-top: 4px;
+    }
+    /* Extend margin left for search button */
+    input.form-control {
+      margin-left: 1200px; /* Adjust this value as needed */
+
+      padding: 8px;
+     
+    }
+  
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            overflow: hidden; /* Hide overflowing content */
+        }
+
+        .mySlides {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            transition: transform 1s ease; /* Define transition */
+        }
+
+        .slide-img {
+            width: 100%;
+            height: auto;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #4CAF50; /* Green */
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .active {
+            background-color: #ff0000; /* Red */
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="back-button" onclick="window.location.href='dashboardusers.html'">BACK</button>
+    <div class="navbar">
+        <a class="active" href="index.html">Home</a>
+        <a href="logout.php">LOGOUT</a>
+    </div>
+    <main>
+        <section>
+            <center>
+                <video width="400" height="200" controls>
+                    <source src="video.MP4" type="video/MP4">
+                    Your browser does not support the video tag.
+                </video>
+            </center>
+            <center>
+                <h1>WELCOME TO OUR PROJECT</h1>
+                <h1>HOME_AUTOMATION_CONTROL_SYSTEM</h1>
+            </center>
+        </section>
+    </main>
+
+    <script>
+        const colors = ['#ff0000', '#f1f1f1', '#00ff00', '#000ff', '#ffff00', '#ff00ff', '#00ff'];
+        let index = 0;
+
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = colors[index];
+            index = (index + 1) % colors.length;
+        }
+
+        // Change background color every second
+        setInterval(changeBackgroundColor, 1000);
+    </script>
+        
+    </style>
+</head>
+<body>
+  <nav>
+<button class="back-button"onclick="window.location.href='dashboardusers.html'">BACK</button>
+        <a href="homes.html">Home</a>
+        
+        <!-- Dropdown for Forms -->
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Forms</a>
+            <div class="dropdown-content">
+               <a href="settings.html">settings</a>
+                <a href="register.html">users</a>
+                <a href="scenes.html">scenes</a>
+                <a href="permissions.html">permissions</a>
+                <a href="rooms.html">rooms</a>
+                <a href="notifications.html">notifications</a>
+                <a href="logs.html">logs</a>
+                <a href="events.html">events</a>
+                <a href="devices.html">devices</a>
+                <a href="automation_rules.html">automation_rules</a>
+                
+            </div>
+        </div>
+        
+        <!-- Dropdown for Tables -->
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Tables</a>
+            <div class="dropdown-content">
+              <a href="settings.php">settings</a>
+                <a href="users.php">users</a>
+                <a href="scenes.php">scenes</a>
+                <a href="permissions.php">permissions</a>
+                <a href="rooms.php">rooms</a>
+                <a href="notifications.Php">notifications</a>
+                <a href="logs.php">logs</a>
+                <a href="events.php">events</a>
+                <a href="devices.php">devices</a>
+                <a href="automation_rules.php">automation_rules</a>
+                
+            </div>
+        </div>
+ <!-- Dropdown for CRUD -->
+        <div class="dropdown">
+            <a href="#" class="dropbtn">CRUD</a>
+            <div class="dropdown-content">
+               <a href="landingsettings.html">settings</a>
+                <a href="landing.html">users</a>
+                <a href="landingscenes.html">scenes</a>
+                <a href="landingpermissions.html">permissions</a>
+                <a href="landingrooms.html">rooms</a>
+                <a href="landingnotifications.html">notifications</a>
+                <a href="landinglogs.html">logs</a>
+                <a href="landingevents.html">events</a>
+                <a href="landingdevices.html">devices</a>
+                <a href="landingautomation_rules.html">automation_rules</a>
+                
+            </div>
+        </div>
+        <a href="abaut.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        
+           <div class="dropdown">
+            <a href="#" class="dropbtn">Settings</a>
+            <div class="dropdown-content">
+                <a href="index.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="logout.php">Logout</a>
+            </div>
+        </div>
+
+        <!--I added this in my style-->
+                 <div class="col-3 offset">
+    <form class="d-flex" action="search.php" method="GET">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+</div>
+    </nav>
+<center>
+           
+        <section>
+            <hr>
+ <h1><bold><u>About us</u></bold></h1>
+
+<!--<p background="./images/about.jpg">At <b>HMS</b>, we are passionate about driving positive change through innovative solutions in home_automation_control_system. As a leading provider better services to our client.
+</p>-->
+
+ <!--<h1><bold><u>About Us</u></bold></h1>
+-->
+We are a team passionate about transforming hostel management through innovative technology solutions. Comprised of experts in software development and hospitality management, we aim to simplify hostel operations and enhance the experience for usersistrators, residents, and guests. Our commitment to integrity, transparency, and excellence drives us to deliver user-centric solutions that streamline processes and optimize efficiency. With a focus on innovation and customer satisfaction, we are dedicated to helping hostels thrive in today's dynamic hospitality industry.
+
+
+<h1><bold><u>Our Mission</u></bold></h1>
+
+Our mission is to revolutionize hostel management by providing an innovative and user-friendly solution that empowers usersistrators to efficiently manage operations while enhancing the experience for residents and guests. We strive to optimize workflow processes, ensure accuracy in management tasks, and foster a sense of community within hostel environments through seamless communication and service delivery.
+<h1><bold><u>Who We Are</u></bold></h1>
+We are a dedicated team of hospitality and technology enthusiasts passionate about revolutionizing hostel management. With a blend of expertise in software development and hospitality management, we bring together our skills and knowledge to create a home_automation_control_system that sets new standards in efficiency, reliability, and user experience. Our team is committed to making a positive impact in the hospitality industry by providing cutting-edge solutions that simplify operations and enhance guest satisfaction.
+<h1><bold><u>What We Do</u></bold></h1>
+<p style="font-size:12;In our home_automation_control_system, we provide a comprehensive solution that automates and streamlines various aspects of hostel operations. Our system facilitates efooms allocation and management, online booking and payment processing, maintenance tracking and resolution, resident communication, and reporting and analytics. By centralizing these functions into a user-friendly platform, we empower usersistrators to manage their hostels effectively while delivering a seamless experience for residents and guests.</p>
+
+<h1><bold><u>Our Values </u></bold></h1>
+
+<p style="font-size: 12;" ><b><u><i>Integrity:</u></b></i> We uphold the highest standards of integrity, honesty, and transparency in everything we do, fostering trust and accountability with our clients, partners, and stakeholders.<br>
+
+<b><u><i>Innovation:</i></u></b> We embrace innovation and continuous improvement, leveraging the latest technologies and best practices to deliver cutting-edge solutions that drive positive change and create value for our customers.<br>
+
+<b><u><i>Sustainability:</i></u></b> We are committed to sustainability in all aspects of our operations, prioritizing environmental stewardship, social responsibility, and economic viability in our decision-making processes.<br>
+
+<b><u><i>Collaboration:</i></u>/</b> We believe in the power of collaboration and teamwork, fostering a culture of respect, diversity, and inclusivity where every voice is heard, and every contribution is valued.<br>
+
+<b><u><i>Customer Focus:</i></u></b> We are dedicated to exceeding customer expectations, providing personalized solutions, responsive service, and ongoing support to ensure the success of our clients' renewable energy projects.
+</p>
+<h1><bold><u>Why Choose Us</u></bold></h1>
+
+- Expertise: With years of experience and a proven track record in the home_automation_control_system, we have the knowledge, skills, and resources to deliver results that exceed expectations.
+  
+- Customization: We understand that every project is unique, which is why we take a tailored approach to design, implementation, and support, ensuring that our solutions align with our clients' specific goals and requirements.
+  
+- Reliability: We are committed to delivering reliable, high-quality products and services that meet the highest industry standards, providing peace of mind and confidence to our customers.
+  
+- Sustainability: As champions of sustainability, we are dedicated to promoting environmentally friendly practices and reducing carbon emissions through the widespread adoption of renewable energy technologies.
+  
+- Partnership: We view our clients as partners in progress, working closely with them to understand their needs, address their challenges, and achieve their objectives together.
+
+
+
+    </main></u></b></p></section></main></center>
+    <main>
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img class="slide-img" src="photo/hostimage.jpeg" alt="graphic 1">
+            </div>
+            <div class="mySlides">
+                <img class="slide-img" src="photo/hostimage.jpeg" alt="graphic 2">
+            </div>
+            <div class="mySlides">
+                <img class="slide-img" src="photo/hostimage.jpeg" alt="graphic 3">
+            </div>
+        </div>
+    </main>
+    <section>
+            <h2>Featured graphics</h2>
+            <div class="featured-devices">
+                <div class="featured-devices">
+                    <img src="photo/h1.jpeg" alt="devices">
+                    <h3>new devices</h3>
+                    <p>devices are available fell free to request devices.<a href="devices.php">Click here to view devices available</a></p>
+                </div>
+                <div class="featured-devices">
+                    <img src="photo/h5.jpeg" alt="devices">
+                    <h3>devices 2</h3>
+                    <p> devices are available fell free to request devices. <a href="users.html">Click here to create an account</a></p>
+                </div>
+            </div></center>
+        </section>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var slides = document.getElementsByClassName("mySlides");
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.transform = "translateX(-" + slideIndex * 100 + "%)";  // Translate slides horizontally
+            }
+            slideIndex++;
+            if (slideIndex >= slides.length) { slideIndex = 0; } // Reset slide index
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <button class="back-button"onclick="window.location.href='dashboarddevices.html'">BACK</button>
+    <!--Habiyaremye daniel 2220007495--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>devices Panel</title>
+</head>
+<body>
+    <h1>devices Panel</h1>
+    
+    <!-- devices Registration Form -->
+    <h2>Create devices</h2>
+    <form method="post" action="landingdevices.php">
+        <label for="devicename">devicename :</label><br>
+        <input type="text" name="devicename" required><br>
+        <label for="devicetype">devicetype:</label><br>
+        <input type="text" name="devicetype" required><br>
+        <label for="location">location:</label><br>
+        <input type="text" name="location" required><br>
+        <label for="status">status:</label><br>
+        <input type="text" name="status" required><br>
+       
+        <button type="submit" name="create">Create</button>
+    </form>
+             <h2>User devices
+         </h2>
+     <form method="post" action="landingdevices.php">
+                    <input type="number" name="deviceid" placeholder=" New deviceid">
+                    <input type="text" name="newdevicename" placeholder="New devicename">
+                    <input type="text" name="newdevicetype" placeholder="New devicetype">
+                    <input type="text" name="newlocation" placeholder="New location">
+                    <input type="text" name="newstatus" placeholder="New status">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">read</button>
+                  
+                                </form>
+</body>
+</html>

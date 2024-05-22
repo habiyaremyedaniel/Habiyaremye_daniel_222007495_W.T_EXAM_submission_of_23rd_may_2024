@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <button class="back-button"onclick="window.location.href='dashboardusers.html'">BACK</button>
+    <!--Habiyaremye daniel Exam 2220007495--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settings Panel</title>
+</head>
+<body>
+    <h1>settings Panel</h1>
+    
+    <!-- settings Registration Form -->
+    <h2>Create settings</h2>
+    <form method="post" action="landingsettings.php">
+        <label for="settingname">settingname:</label><br>
+        <input type="text" name="settingname" required><br>
+        <label for="value">value:</label><br>
+        <input type="text" name="value" required><br>
+        
+       
+        <button type="submit" name="create">Create</button>
+    </form>
+             <h2>User settings
+         </h2>
+     <form method="post" action="landingsettings.php">
+                    <input type="number" name="settingid" placeholder=" New settingid">
+                    <input type="text" name="newsettingname" placeholder="New settingname">
+                    <input type="text" name="newvalue" placeholder="New value">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">read</button>
+                  
+                                </form>
+</body>
+</html>

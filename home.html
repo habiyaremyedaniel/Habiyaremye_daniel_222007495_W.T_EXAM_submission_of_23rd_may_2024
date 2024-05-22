@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="/master.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .navbar {
+            overflow: hidden;
+            background-color: #4CAF50; /* Green */
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .active {
+            background-color: #ff0000; /* Red */
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="back-button" onclick="window.location.href='dashboardusers.html'">BACK</button>
+    <div class="navbar">
+        <a class="active" href="index.html">Home</a>
+        <a href="logout.php">LOGOUT</a>
+    </div>
+    <main>
+        <section>
+            <center>
+                <video width="400" height="200" controls>
+                    <source src="hosT.MP4" type="video/MP4">
+                    Your browser does not support the video tag.
+                </video>
+            </center>
+            <center>
+                <h1>WELCOME TO MY PROJECT</h1>
+                <h1>HOME_AUTOMATION_CONTROL_SYSTEM</h1>
+            </center>
+        </section>
+    </main>
+
+    <script>
+        const colors = ['#ff0000', '#f1f1f1', '#00ff00', '#000ff', '#ffff00', '#ff00ff', '#00ff'];
+        let index = 0;
+
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = colors[index];
+            index = (index + 1) % colors.length;
+        }
+
+        // Change background color every second
+        setInterval(changeBackgroundColor, 1000);
+    </script>
+</body>
+
+</html>

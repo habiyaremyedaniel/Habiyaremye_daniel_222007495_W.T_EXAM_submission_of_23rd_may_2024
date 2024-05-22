@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <button class="back-button"onclick="window.location.href='dashboardadmin.html'">BACK</button>
+    <!--Habiyaremye daniel 2220007495--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>automation_rules Panel</title>
+</head>
+<body>
+    <h1>automation_rules Panel</h1>
+    
+    <!-- automation_rules Registration Form -->
+    <h2>Create automation_rules</h2>
+    <form method="post" action="landingautomation_rules.php">
+         <label for="rulename">rulename :</label><br>
+        <input type="text" name="rulename" required><br>
+        <label for="trigger_event">trigger_event:</label><br>
+        <input type="text" name="trigger_event" required><br>
+        <label for="action">action:</label><br>
+        <input type="text" name="action" required><br>
+        <label for="deviceid ">deviceid :</label><br>
+        <input type="number" name="deviceid " required><br>
+       <label for="userid ">deviceid :</label><br>
+        <input type="number" name="userid " required><br>
+        <button type="submit" name="create">Create</button>
+    </form>
+             <h2>User automation_rules
+         </h2>
+     <form method="post" action="landingautomation_rules.php">
+                    <input type="number" name="ruleid" placeholder=" New ruleid">
+                    <input type="text" name="newrulename" placeholder="New rulename">
+                    <input type="text" name="newtrigger_event" placeholder="New trigger_event">
+                    <input type="text" name="newaction" placeholder="New action">
+                    <input type="number" name="newdeviceid" placeholder="New deviceid">
+                    <input type="number" name="newuserid" placeholder="New userid">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">read</button>
+                  
+                                </form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <button class="back-button"onclick="window.location.href='dashboardadmin.html'">BACK</button>
+    <!--Habiyaremye daniel 2220007495--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events Panel</title>
+</head>
+<body>
+    <h1>events Panel</h1>
+    
+    <!-- events Registration Form -->
+    <h2>Create events</h2>
+    <form method="post" action="landingevents.php">
+    <label for="eventtype">eventtype:</label><br>
+        <input type="text" name="eventtype" required><br>
+        <label for="description">description:</label><br>
+        <input type="text" name="description" required><br>
+        
+       
+        <button type="submit" name="create">Create</button>on>
+    </form>
+             <h2>User events
+         </h2>
+     <form method="post" action="landingevents.php">
+                    <input type="number" name="eventid" placeholder=" New eventid">
+                    <input type="text" name="neweventtype" placeholder="New eventtype">
+                    <input type="text" name="newdescription" placeholder="New description">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">read</button>
+                  
+                                </form>
+</body>
+</html>

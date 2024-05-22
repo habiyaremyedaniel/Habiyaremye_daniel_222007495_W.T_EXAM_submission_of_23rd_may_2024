@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <button class="back-button"onclick="window.location.href='dashboardadmin.html'">BACK</button>
+    <!--Habiyaremye daniel 2220007495--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logs Panel</title>
+</head>
+<body>
+    <h1>logs Panel</h1>
+    
+    <!-- logs Registration Form -->
+    <h2>Create logs</h2>
+    <form method="post" action="landinglogs.php">
+         <label for="userid">userid:</label><br>
+        <input type="number" name="userid" required><br>
+        <label for="deviceid">deviceid:</label><br>
+        <input type="number" name="deviceid" required><br>
+        <label for="action">action:</label><br>
+        <input type="text" name="action" required><br>
+        
+       
+        <button type="submit" name="create">Create</button>
+    </form>
+             <h2>User logs
+         </h2>
+     <form method="post" action="landinglogs.php">
+                    <input type="number" name="logid" placeholder=" New logid">
+                    <input type="number" name="newuserid" placeholder="New userid">
+                    <input type="number" name="newdeviceid" placeholder="New deviceid">
+                    <input type="text" name="newaction" placeholder="New action">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">read</button>
+                  
+                                </form>
+</body>
+</html>

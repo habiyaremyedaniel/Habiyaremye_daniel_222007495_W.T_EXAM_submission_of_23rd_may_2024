@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <button class="back-button"onclick="window.location.href='dashboardscenes.html'">BACK</button>
+    <!--Habiyaremye daniel 2220007495--->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scenes Panel</title>
+</head>
+<body>
+    <h1>scenes Panel</h1>
+    
+    <!-- scenes Registration Form -->
+    <h2>Create scenes</h2>
+    <form method="post" action="landingscenes.php">
+        <label for="scenename">scenename:</label><br>
+        <input type="text" name="scenename" required><br>
+        <label for="description">description:</label><br>
+        <input type="text" name="description" required><br>
+        <label for="active">active:</label><br>
+        <input type="text" name="active" required><br>
+        
+       
+        <button type="submit" name="create">Create</button>
+    </form>
+             <h2>User scenes
+         </h2>
+     <form method="post" action="landingscenes.php">
+                    <input type="number" name="sceneid" placeholder=" New sceneid">
+                    <input type="text" name="newscenename" placeholder="New scenename">
+                    <input type="text" name="newdescription" placeholder="New description">
+                    <input type="text" name="newactive" placeholder="New active">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">read</button>
+                  
+                                </form>
+</body>
+</html>

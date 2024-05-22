@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Home Automation Control System</title>
+    <link rel="stylesheet" href="css/style1.css">
+   <style>
+    /* CSS for button */
+    .toggle-button {
+        padding: 12px 25px;
+        background-color: #FF5733; /* Bright orange color */
+        color: white;
+        border: none;
+        border-radius: 8px; /* Increased border-radius for a smoother look */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+        font-size: 16px; /* Increased font size for better readability */
+        font-weight: bold; /* Making the text bold */
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Adding transition for hover effect */
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .toggle-button:hover {
+        background-color: #FF4500; /* Darker orange for hover effect */
+        transform: scale(1.05); /* Slightly increasing the size on hover */
+    }
+
+    .toggle-button:active {
+        background-color: #FF6347; /* Lighter orange for active state */
+        transform: scale(0.98); /* Slightly decreasing the size when clicked */
+    }
+</style>
+
+<button class="toggle-button">Toggle</button>
+</head>
+<body>
+    <button class="toggle-button" onclick="toggleBackgroundColor()">Toggle Background Color</button>
+    <hr>
+    <h1><u>About us</u></h1>
+<p>
+  At Home Automation Control System (HACS), we are dedicated to revolutionizing home automation through innovative technology solutions. Comprising experts in software development and smart home technology, our team is committed to simplifying home management and enhancing the living experience for homeowners.
+</p>
+
+<h1><strong><u>Our Mission</u></strong></h1>
+
+<p>
+  Our mission is to provide cutting-edge home automation solutions that empower homeowners to control and monitor their homes efficiently and effortlessly. We strive to enhance convenience, security, and energy efficiency while promoting a comfortable and sustainable living environment.
+</p>
+
+<h1><strong><u>Who We Are</u></strong></h1>
+
+<p>
+  We are a passionate team of professionals with a shared vision of leveraging technology to transform homes into smart, connected spaces. Combining expertise in software development, hardware integration, and user experience design, we aim to deliver intuitive and intelligent solutions that redefine modern living.
+</p>
+
+<h1><strong><u>What We Do</u></strong></h1>
+
+<p>
+  In our home automation control system, we provide a comprehensive suite of features and functionalities designed to automate and optimize various aspects of home management. From smart lighting and climate control to security systems and energy monitoring, our platform offers seamless integration and intuitive control for homeowners.
+</p>
+
+<h1><strong><u>Our Values</u></strong></h1>
+
+<ul>
+  <li><strong>Innovation:</strong> We embrace innovation to drive continuous improvement and stay at the forefront of technological advancements in home automation.</li>
+  <li><strong>Integrity:</strong> We uphold the highest standards of integrity, honesty, and transparency in all our interactions and business practices.</li>
+  <li><strong>Customer Focus:</strong> We are committed to understanding and exceeding the needs of our customers, delivering personalized solutions and exceptional service.</li>
+  <li><strong>Collaboration:</strong> We believe in the power of collaboration and teamwork, working closely with our clients and partners to achieve shared goals and objectives.</li>
+  <li><strong>Sustainability:</strong> We prioritize sustainability in our products and operations, striving to minimize environmental impact and promote energy efficiency.</li>
+</ul>
+
+<h1><strong><u>Why Choose Us</u></strong></h1>
+
+<p>
+  - Expertise: Benefit from our years of experience and expertise in home automation technology, ensuring reliable and innovative solutions tailored to your needs.
+  <br>
+  - Customization: We understand that every home is unique, which is why we offer customizable solutions that align with your lifestyle, preferences, and budget.
+  <br>
+  - Support: Enjoy dedicated customer support and technical assistance from our team of experts, ensuring a seamless experience from installation to maintenance.
+  <br>
+  - Integration: Our platform integrates seamlessly with a wide range of smart devices and systems, providing comprehensive control and monitoring capabilities for your home.
+  <br>
+  - Future-Proof: Stay ahead of the curve with our future-proof solutions that evolve with technology advancements, ensuring your home remains smart and efficient for years to come.
+</p>
+
+    <script>
+        // JavaScript code to toggle background color
+        var colors = ["#3498db", "#e74c3c", "#9b59b6", "#2ecc71"]; // Array of different colors
+        var colorIndex = 0; // Index to track current color
+
+        function toggleBackgroundColor() {
+            document.body.style.backgroundColor = colors[colorIndex]; // Set the background color
+            colorIndex = (colorIndex + 1) % colors.length; // Move to the next color in the array
+        }
+    </script>
+</body>
+</html>
